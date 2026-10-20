@@ -1,0 +1,15 @@
+/* Culori Custom: Fundal Black & Accente Marsala */
+$background-color: #121212 !default;
+$text-color:       #e0e0e0 !default;
+$muted-text-color: #888888 !default;
+$primary-color:    #6A1B29 !default; /* Marsala */
+$link-color:       #A33849 !default;
+$border-color:     #2c2c2c !default;
+
+/* Fonturi Moderne */
+$sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+$monospace:  "JetBrains Mono", "Fira Code", Monaco, Consolas, monospace !default;
+
+$global-font-family: $sans-serif;
+$header-font-family: $sans-serif;
+$code-font-family:   $monospace;

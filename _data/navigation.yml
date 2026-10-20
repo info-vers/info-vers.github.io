@@ -1,0 +1,9 @@
+main:
+  - title: "Despre Mine"
+    url: /
+  - title: "Cărți Copii"
+    url: /carti-copii/
+  - title: "Versuri"
+    url: /versuri/
+  - title: "Proiecte"
+    url: /proiecte/
