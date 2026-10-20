@@ -6,7 +6,8 @@ url: "https://info-vers.github.io"
 baseurl: "" # keep empty for user pages
 
 # Theme Configuration
-theme: "minimal-mistakes-jekyll"
+#theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark" # We will override this with our custom.scss
 
 # Collections
