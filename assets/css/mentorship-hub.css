@@ -1,447 +1,52 @@
-:root {
-  --mentor-bg: #0b1120;
-  --mentor-bg-2: #111b2f;
-  --mentor-panel: rgba(17, 24, 39, 0.84);
-  --mentor-card: rgba(15, 23, 42, 0.96);
-  --mentor-border: rgba(148, 163, 184, 0.2);
-  --mentor-accent: #7cc8ff;
-  --mentor-accent-2: #8b7cf7;
-  --mentor-accent-3: #ff9a6b;
-  --mentor-text: #edf3ff;
-  --mentor-soft: rgba(237, 243, 255, 0.74);
-  --mentor-strong: #ffffff;
+@media (min-width: 980px) {
+  .page__inner-wrap,
+  .page__content {
+    max-width: 1400px !important;
+    width: 100% !important;
+  }
+
+  .page__content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .page__inner-wrap {
+    margin: 0 auto !important;
+  }
+
+  .project-shell,
+  .bookshelf,
+  .book-reader,
+  .poem-view,
+  .cv-shell {
+    width: min(1280px, calc(100vw - 80px));
+    max-width: 1280px;
+  }
 }
 
-html, body {
-  background:
-    radial-gradient(circle at top left, rgba(124, 200, 255, 0.18), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(139, 124, 247, 0.14), transparent 32%),
-    var(--mentor-bg);
-  color: var(--mentor-text);
+@media (max-width: 979px) {
+  .project-shell,
+  .bookshelf,
+  .book-reader,
+  .poem-view,
+  .cv-shell {
+    width: 100%;
+  }
 }
 
-.page__content,
-.page__inner-wrapper,
+.page__inner-wrap,
 .archive {
-  background: transparent;
+  max-width: none !important;
 }
 
-.eyebrow {
-  margin: 0 0 0.6rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--mentor-accent);
-}
-
-.project-shell,
-.bookshelf,
-.book-reader,
-.poem-view {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.project-shell__intro,
-.bookshelf__intro,
-.poem-view__index {
-  margin-bottom: 1.6rem;
-}
-
-.project-shell__intro h2,
-.bookshelf__intro h2,
-.poem-view__index h2 {
-  font-size: clamp(1.9rem, 3vw, 2.8rem);
-  line-height: 1.15;
-  margin: 0;
+.page__content {
+  width: 100% !important;
 }
 
 .project-grid {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  border: 1px solid var(--mentor-border);
-  border-radius: 22px;
-  background: linear-gradient(180deg, rgba(17, 24, 39, 0.98), rgba(11, 17, 32, 0.9));
-  box-shadow: 0 14px 36px rgba(0,0,0,0.22);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(124, 200, 255, 0.42);
-}
-
-.project-card__image {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  display: block;
-}
-
-.project-card__body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  padding: 1.2rem 1.2rem 1.35rem;
-}
-
-.project-card__meta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.project-card__tag,
-.project-card__badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.4rem 0.72rem;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
-.project-card__tag {
-  background: rgba(124, 200, 255, 0.12);
-  color: #cde9ff;
-}
-
-.project-card__badge {
-  background: rgba(255,255,255,0.05);
-  color: var(--mentor-soft);
-}
-
-.project-card__tag--junior-children {
-  background: rgba(121, 210, 149, 0.14);
-  color: #c3f2cf;
-}
-
-.project-card__tag--explorer-high-school {
-  background: rgba(255, 154, 107, 0.14);
-  color: #ffd1b6;
-}
-
-.project-card__tag--advanced-university {
-  background: rgba(139, 124, 247, 0.14);
-  color: #d8d0ff;
-}
-
-.project-card h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.25;
-}
-
-.project-card p {
-  margin: 0;
-  color: var(--mentor-soft);
-  line-height: 1.65;
-}
-
-.project-card__button {
-  width: fit-content;
-  border: 0;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--mentor-accent), var(--mentor-accent-2));
-  color: white;
-  padding: 0.8rem 1.1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.project-card__button:hover {
-  opacity: 0.96;
-  transform: translateY(-1px);
-}
-
-.project-modal-overlay {
-  position: fixed;
-  inset: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background: rgba(2, 6, 18, 0.76);
-  z-index: 1000;
-}
-
-.project-modal-overlay.is-open {
-  display: flex;
-}
-
-.project-modal {
-  position: relative;
-  width: min(720px, 100%);
-  background: linear-gradient(180deg, rgba(17, 24, 39, 0.97), rgba(9, 14, 24, 0.97));
-  border: 1px solid var(--mentor-border);
-  border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
-  padding: 1.5rem 1.5rem 1.2rem;
-}
-
-.project-modal__header h3 {
-  margin: 0 0 1rem;
-  font-size: clamp(1.5rem, 2vw, 2.1rem);
-}
-
-.project-modal__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.project-modal__summary {
-  margin: 0 0 1rem;
-  color: var(--mentor-soft);
-  line-height: 1.7;
-}
-
-.project-modal__list {
-  margin: 0;
-  padding-left: 1.2rem;
-  color: var(--mentor-text);
-  line-height: 1.8;
-}
-
-.project-modal__close {
-  position: absolute;
-  top: 0.7rem;
-  right: 0.8rem;
-  border: none;
-  background: transparent;
-  color: var(--mentor-text);
-  font-size: 2rem;
-  cursor: pointer;
-  line-height: 1;
-}
-
-.book-reader {
-  max-width: 980px;
-  padding-bottom: 2rem;
-}
-
-.book-reader__header {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.book-reader__header h2 {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.1;
-  text-align: center;
-}
-
-.book-reader__progress {
-  width: 100%;
-  height: 10px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.book-reader__progress-bar {
-  display: block;
-  width: 0%;
-  height: 100%;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--mentor-accent), var(--mentor-accent-2));
-  transition: width 0.25s ease;
-}
-
-.book-page {
-  display: none;
-  background: rgba(10, 15, 27, 0.88);
-  border: 1px solid var(--mentor-border);
-  border-radius: 26px;
-  overflow: hidden;
-  box-shadow: 0 18px 42px rgba(0,0,0,0.2);
-}
-
-.book-page.is-active {
-  display: block;
-}
-
-.book-page__image-wrap {
-  background: #0d1627;
-}
-
-.book-page__image {
-  display: block;
-  width: 100%;
-  height: 440px;
-  object-fit: cover;
-}
-
-.book-page__text {
-  padding: 1.5rem 1.35rem 1.8rem;
-}
-
-.book-page__text p {
-  margin: 0;
-  font-size: clamp(1.2rem, 2vw, 1.7rem);
-  line-height: 1.7;
-  color: var(--mentor-text);
-}
-
-.book-reader__controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-top: 1.25rem;
-}
-
-.book-reader__nav {
-  border: none;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--mentor-accent), var(--mentor-accent-2));
-  color: white;
-  padding: 0.9rem 1.3rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.book-reader__nav:hover {
-  transform: translateY(-1px);
-}
-
-.book-reader__counter {
-  color: var(--mentor-soft);
-  font-weight: 700;
-}
-
-.book-reader__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.4rem;
-}
-
-.book-reader__item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem 1rem;
-  border: 1px solid var(--mentor-border);
-  border-radius: 999px;
-  background: rgba(255,255,255,0.03);
-  color: var(--mentor-text);
-  text-decoration: none;
-}
-
-.poem-view {
-  max-width: 800px;
-  padding-bottom: 2rem;
-}
-
-.poem-view__index h2 {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 2.8rem);
-}
-
-.poem-list-item {
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.poem-list-item__meta {
-  color: rgba(237,243,255,0.66);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.poem-list-item h3 {
-  margin: 0.3rem 0 0;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  line-height: 1.4;
-}
-
-.poem-view__card {
-  background: rgba(255,255,255,0.02);
-  border: 1px solid var(--mentor-border);
-  border-radius: 22px;
-  padding: clamp(1.3rem, 3vw, 2.5rem);
-  text-align: center;
-}
-
-.poem-view__meta {
-  margin: 0 0 0.7rem;
-  color: rgba(237,243,255,0.62);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 0.72rem;
-}
-
-.poem-view__card h1 {
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(2.1rem, 4vw, 3rem);
-}
-
-.poem-view__text {
-  margin-top: 1.6rem;
-  color: var(--mentor-text);
-  white-space: pre-line;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.2rem, 1.9vw, 1.8rem);
-  line-height: 1.8;
-}
-
-.poem-view__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.poem-view__nav a {
-  color: #f3d8c6;
-  text-decoration: none;
-  opacity: 0.86;
-}
-
-.poem-view__nav a:hover {
-  opacity: 1;
-}
-
-.poem-view__next {
-  animation: poemGlow 1.8s ease-in-out infinite alternate;
-}
-
-@keyframes poemGlow {
-  from { opacity: 0.55; }
-  to { opacity: 1; }
-}
-
-@media (max-width: 640px) {
-  .book-reader__controls,
-  .poem-view__nav {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .book-reader__nav {
-    width: 100%;
-  }
+  min-height: 100%;
 }

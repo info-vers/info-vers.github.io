@@ -1,183 +1,307 @@
 ---
 layout: single
-title: "Learn Coding by Building Real Projects — From Scratch to Launch"
+title: "About Me"
 permalink: /
-author_profile: true
+author_profile: false
+classes: wide
 ---
 
-<div class="mentorship-hero">
-  <div class="mentorship-hero__content">
-    <p class="mentorship-kicker">Project-Based Mentorship</p>
-    <h2>Learn Coding by Building Real Projects — From Scratch to Launch.</h2>
-    <p class="mentorship-lead">We help students turn curiosity into confidence through guided builds, real-world problem solving, and creative portfolio work.</p>
-
-    <div class="mentorship-hero__actions">
-      <a class="mentorship-cta mentorship-cta--parents" href="#for-parents">
-        <span>For Parents</span>
-      </a>
-      <a class="mentorship-cta mentorship-cta--students" href="#for-students">
-        <span>For Students</span>
-      </a>
+<div class="cv-shell">
+  <header class="cv-header">
+    <div class="cv-header__identity">
+      <p class="cv-kicker">Computer Science Mentor • Educator • Creative Technologist</p>
+      <h1>InfoVers</h1>
+      <p class="cv-role">Helping students build real coding projects, confidence, and a future-ready skillset.</p>
     </div>
-  </div>
 
-  <div class="mentorship-hero__panel">
-    <div class="mentorship-highlight">
-      <strong>What students build</strong>
-      <ul>
-        <li>Games, mini apps, and real coding challenges</li>
-        <li>Structured learning milestones with feedback</li>
-        <li>Portfolio-ready projects that feel relevant</li>
+    <div class="cv-header__meta">
+      <span>Romania</span>
+      <span>Remote / Online</span>
+      <span>Mentorship • Teaching • Project Design</span>
+    </div>
+  </header>
+
+  <section class="cv-section cv-section--intro">
+    <div class="cv-section__title">
+      <h2>Profile</h2>
+    </div>
+    <div class="cv-section__content">
+      <p>
+        I support students and families through structured, project-based learning in computer science.
+        My work combines mentoring, conceptual clarity, and practical application so learners can move from
+        curiosity to meaningful technical projects with confidence.
+      </p>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <div class="cv-section__title">
+      <h2>Experience</h2>
+    </div>
+
+    <div class="cv-section__content cv-timeline">
+      <article class="cv-job">
+        <div class="cv-job__period">2023 — Present</div>
+        <div class="cv-job__body">
+          <h3>Computer Science Mentor</h3>
+          <p class="cv-job__meta">Independent / Private Mentorship</p>
+          <ul>
+            <li>Guide students through coding fundamentals, algorithmic thinking, and project-based learning.</li>
+            <li>Design structured roadmaps for beginners, high school learners, and university-level preparation.</li>
+            <li>Create portfolios, mini-apps, and interactive challenges that turn concept learning into real outputs.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cv-job">
+        <div class="cv-job__period">2021 — 2023</div>
+        <div class="cv-job__body">
+          <h3>Academic Support & Technical Coaching</h3>
+          <p class="cv-job__meta">Problem Solving • Logic • Exam Preparation</p>
+          <ul>
+            <li>Help students improve logical reasoning, debugging skills, and exam confidence.</li>
+            <li>Support preparation for programming and theoretical computer science topics.</li>
+            <li>Build personalized study plans focused on clarity, consistency, and measurable progress.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cv-job">
+        <div class="cv-job__period">2019 — 2021</div>
+        <div class="cv-job__body">
+          <h3>Creative Coding & Educational Content</h3>
+          <p class="cv-job__meta">Workshops • Projects • Storytelling</p>
+          <ul>
+            <li>Built educational digital content for children, combining storytelling and coding concepts.</li>
+            <li>Created interactive book and learning experiences to make technical topics approachable.</li>
+            <li>Developed learning materials adapted for different age groups and learning styles.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <div class="cv-section__title">
+      <h2>Education</h2>
+    </div>
+    <div class="cv-section__content">
+      <div class="cv-education">
+        <div class="cv-education__item">
+          <strong>Computer Science / Technology Education</strong>
+          <span>Self-directed learning, mentoring practice, and applied project development</span>
+        </div>
+        <div class="cv-education__item">
+          <strong>Continuous Learning</strong>
+          <span>Algorithms, web development, creative coding, UX, and student-centered teaching</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <div class="cv-section__title">
+      <h2>Skills</h2>
+    </div>
+    <div class="cv-section__content">
+      <div class="cv-skills">
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>HTML / CSS</span>
+        <span>Algorithms</span>
+        <span>Problem Solving</span>
+        <span>Mentoring</span>
+        <span>Project Design</span>
+        <span>Curriculum Structure</span>
+        <span>UX for Learning</span>
+        <span>Creative Storytelling</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <div class="cv-section__title">
+      <h2>Highlights</h2>
+    </div>
+    <div class="cv-section__content">
+      <ul class="cv-highlights">
+        <li>Project-based learning that keeps students motivated and accountable.</li>
+        <li>Clear progression from beginner logic to portfolio-ready build work.</li>
+        <li>Support for academic confidence, structured learning, and real-world problem solving.</li>
       </ul>
     </div>
-  </div>
-</div>
-
-<div class="mentorship-split" id="for-parents">
-  <div class="mentorship-card mentorship-card--parents">
-    <h3>For Parents</h3>
-    <ul>
-      <li>Clear structure and logical progression</li>
-      <li>Problem-solving skills that transfer across subjects</li>
-      <li>Academic safety nets for exams and Bacalaureat prep</li>
-      <li>Measurable growth through projects and reflection</li>
-    </ul>
-  </div>
-
-  <div class="mentorship-card mentorship-card--students" id="for-students">
-    <h3>For Students</h3>
-    <ul>
-      <li>Build a portfolio from day one</li>
-      <li>Create games, apps, and creative tools</li>
-      <li>Practice design, debugging, and presentation</li>
-      <li>Learn with freedom to experiment and iterate</li>
-    </ul>
-  </div>
+  </section>
 </div>
 
 <style>
-  .mentorship-hero {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 2rem;
-    align-items: center;
-    margin: 2rem 0 2.5rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, rgba(64, 126, 255, 0.08), rgba(170, 92, 255, 0.06));
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 22px;
+  .cv-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 0 3rem;
   }
 
-  .mentorship-kicker {
-    margin-bottom: 0.75rem;
-    font-size: 0.8rem;
+  .cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .cv-kicker {
+    margin: 0 0 0.8rem;
+    font-size: 0.72rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: #9fc3ff;
     font-weight: 700;
   }
 
-  .mentorship-hero h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    line-height: 1.1;
-    font-size: clamp(2rem, 2.8vw, 3.3rem);
+  .cv-header h1 {
+    margin: 0;
+    font-size: clamp(2.6rem, 5vw, 4.5rem);
+    line-height: 1;
   }
 
-  .mentorship-lead {
+  .cv-role {
+    margin: 0.8rem 0 0;
+    max-width: 720px;
     font-size: 1.08rem;
     color: rgba(255,255,255,0.8);
   }
 
-  .mentorship-hero__actions {
+  .cv-header__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .cv-section {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .cv-section__title h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #cfe3ff;
+  }
+
+  .cv-section__content {
+    min-width: 0;
+  }
+
+  .cv-section__content p {
+    margin: 0;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.86);
+  }
+
+  .cv-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .cv-job {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .cv-job:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .cv-job__period {
+    color: #8cc7ff;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .cv-job__body h3 {
+    margin: 0 0 0.2rem;
+    font-size: 1.35rem;
+  }
+
+  .cv-job__meta {
+    margin: 0 0 0.7rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+  }
+
+  .cv-job__body ul,
+  .cv-highlights {
+    margin: 0;
+    padding-left: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.82);
+  }
+
+  .cv-education {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cv-education__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.02);
+  }
+
+  .cv-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1.5rem;
+    gap: 0.7rem;
   }
 
-  .mentorship-cta {
+  .cv-skills span {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-height: 52px;
-    padding: 0.9rem 1.4rem;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.6rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(124, 200, 255, 0.08);
+    border: 1px solid rgba(124, 200, 255, 0.14);
+    color: #eaf6ff;
+    font-weight: 600;
   }
 
-  .mentorship-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 14px 26px rgba(0,0,0,0.18);
-    text-decoration: none;
-  }
-
-  .mentorship-cta--parents {
-    background: linear-gradient(135deg, #5ca7ff, #7c7cff);
-    color: white;
-  }
-
-  .mentorship-cta--students {
-    background: linear-gradient(135deg, #f39b6d, #ff5e7a);
-    color: white;
-  }
-
-  .mentorship-hero__panel {
-    display: flex;
-    justify-content: center;
-  }
-
-  .mentorship-highlight {
-    width: 100%;
-    padding: 1.2rem 1.1rem;
-    border-radius: 18px;
-    background: rgba(15, 27, 50, 0.8);
-    border: 1px solid rgba(255,255,255,0.06);
-  }
-
-  .mentorship-highlight strong {
-    display: block;
-    margin-bottom: 0.8rem;
-    font-size: 1.05rem;
-  }
-
-  .mentorship-highlight ul {
-    margin: 0;
-    padding-left: 1.2rem;
-    color: rgba(255,255,255,0.82);
-  }
-
-  .mentorship-split {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .mentorship-card {
-    padding: 1.5rem;
-    border-radius: 18px;
-    background: rgba(18, 20, 36, 0.8);
-    border: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .mentorship-card h3 {
-    margin-top: 0;
-    font-size: 1.6rem;
-  }
-
-  .mentorship-card ul {
-    margin: 0;
-    padding-left: 1.2rem;
-    color: rgba(255,255,255,0.82);
-  }
-
-  @media (max-width: 700px) {
-    .mentorship-hero {
+  @media (max-width: 860px) {
+    .cv-header,
+    .cv-section {
       grid-template-columns: 1fr;
-      padding: 1.1rem;
+      display: block;
+    }
+
+    .cv-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cv-header__meta {
+      text-align: left;
+    }
+
+    .cv-job {
+      grid-template-columns: 1fr;
     }
   }
 </style>
