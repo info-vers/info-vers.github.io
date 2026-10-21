@@ -17,10 +17,13 @@ layout: default
           <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card__image" />
           <div class="project-card__body">
             <div class="project-card__meta-row">
-              <span class="project-card__tag project-card__tag--{{ project.audience | downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' }}">{{ project.audience }}</span>
+              <span class="project-card__tag project-card__tag--{{ project.audience | downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' }}">
+                {{ project.audience }}
+              </span>
               <span class="project-card__badge">{{ project.duration }}</span>
               <span class="project-card__badge">{{ project.tech }}</span>
             </div>
+
             <h3>{{ project.title }}</h3>
             <p>{{ project.summary }}</p>
             <button type="button" class="project-card__button">Vezi detalii</button>
