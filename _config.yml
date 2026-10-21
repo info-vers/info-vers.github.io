@@ -3,12 +3,18 @@ title: "CS Tutor & Creative Hub"
 locale: "ro-RO"
 description: "Meditații Informatică | Cărți pentru Copii | Poezii"
 url: "https://info-vers.github.io"
-baseurl: "" # keep empty for user pages
+baseurl: ""  # user page => empty baseurl
 
-# Theme Configuration
-#theme: "minimal-mistakes-jekyll"
+# Minimal Mistakes theme
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # We will override this with our custom.scss
+minimal_mistakes_skin: "dark"
+
+# Required plugins for Minimal Mistakes
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Collections
 collections:
