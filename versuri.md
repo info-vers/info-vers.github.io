@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Info Versuri"
-permalink: /info-versuri/
+permalink: /versuri/
 author_profile: false
 ---
 
