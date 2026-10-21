@@ -3,11 +3,13 @@ layout: default
 ---
 
 <div class="project-grid">
-  {% assign project_list = page.projects | default: site.data.projects %}
+  <!-- REPARAT: Citim direct din colecția site.proiecte (folderul _proiecte/) -->
+  {% assign project_list = site.proiecte %}
+  
   {% if project_list %}
     {% for project in project_list %}
       <article class="project-card" data-project-index="{{ forloop.index0 }}">
-        <img src="{{ project.image }}" alt="{{ project.title }}" class="project-card__image" />
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }}" class="project-card__image" />
         <div class="project-card__body">
           <div class="project-card__meta-row">
             <span class="project-card__tag project-card__tag--{{ project.audience | downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' }}">{{ project.audience }}</span>
@@ -17,7 +19,7 @@ layout: default
           <h3>{{ project.title }}</h3>
           <p>{{ project.summary }}</p>
           
-          <!-- Salvăm datele în siguranță direct pe buton sub formă de atribute HTML escape-uite -->
+          <!-- Salvăm datele sigure în atributele butonului -->
           <button type="button" 
                   class="project-card__button"
                   data-title="{{ project.title | escape }}"
@@ -49,7 +51,6 @@ layout: default
   const closeButton = document.querySelector('.project-modal__close');
 
   const renderProjectModal = (project) => {
-    // Ne asigurăm că milestones este un array valid înainte de a face map
     const milestonesHTML = Array.isArray(project.milestones)
       ? project.milestones.map(item => `<li>${item}</li>`).join('')
       : '';
@@ -78,7 +79,6 @@ layout: default
     if (!button) return;
 
     button.addEventListener('click', () => {
-      // Citim din atributele HTML expuse, prevenind orice scurgere de cod brut Liquid
       let milestones = [];
       try {
         milestones = JSON.parse(button.getAttribute('data-milestones')) || [];
