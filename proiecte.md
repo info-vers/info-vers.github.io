@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Portofoliu de Proiecte"
-permalink: /portofoliu/
+permalink: /proiecte/
 ---
 
 Aici sunt prezentate proiectele mele software, resursele educaționale și aplicațiile dezvoltate.
