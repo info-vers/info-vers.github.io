@@ -1,7 +1,7 @@
 # Site Settings
 title: "CS Tutor & Creative Hub"
 locale: "ro-RO"
-description: "Meditații Informatică | Cărți pentru Copii | Poezii"
+description: "Project-based mentorship | Cărți pentru Copii | Poezii"
 url: "https://info-vers.github.io"
 baseurl: ""  # user page => empty baseurl
 
@@ -24,6 +24,8 @@ collections:
   versuri:
     output: true
     permalink: /versuri/:path/
+  proiecte:
+    output: false
 
 # Defaults
 defaults:
@@ -35,18 +37,23 @@ defaults:
   - scope:
       path: "_carti"
     values:
-      layout: "single"
+      layout: "book-reader"
       author_profile: false
   - scope:
       path: "_versuri"
     values:
-      layout: "single"
+      layout: "poem-view"
+      author_profile: false
+  - scope:
+      path: "_proiecte"
+    values:
+      layout: "project-grid"
       author_profile: false
 
 # Navigation
 navigation:
   - title: "Despre Mine"
-    url: /despre-mine/
+    url: /
   - title: "Cărți Copii"
     url: /carti-copii/
   - title: "Versuri"

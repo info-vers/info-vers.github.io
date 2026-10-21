@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const readerRoot = document.querySelector('[data-book-reader]');
+  if (!readerRoot) return;
+
   const bookPages = [...document.querySelectorAll('.book-page')];
   const progressBar = document.getElementById('book-progress-bar');
   const currentPageEl = document.getElementById('book-current-page');

@@ -1,11 +1,13 @@
 ---
-layout: default
+layout: single
+classes: wide
 ---
 
-<div class="book-reader">
+<div class="book-reader" data-book-reader>
   {% assign pages = page.book_pages %}
-  {% if pages %}
+  {% if pages and pages.size > 0 %}
     <div class="book-reader__header">
+      <p class="eyebrow">Citește la rând</p>
       <h2>{{ page.book_title | default: page.title }}</h2>
       <div class="book-reader__progress">
         <span id="book-progress-bar" class="book-reader__progress-bar"></span>
@@ -29,9 +31,8 @@ layout: default
       <button class="book-reader__nav" data-direction="next" type="button">Înainte ➡️</button>
     </div>
   {% else %}
-    {{ content }}
+    <div class="book-reader__empty">
+      {{ content }}
+    </div>
   {% endif %}
 </div>
-
-<link rel="stylesheet" href="{{ '/assets/css/mentorship-hub.css' | relative_url }}">
-<script src="{{ '/assets/js/book-reader.js' | relative_url }}" defer></script>
