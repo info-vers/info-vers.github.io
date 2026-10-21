@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+  if (document.body.dataset.projectGridReady === 'true') {
+    return;
+  }
+  document.body.dataset.projectGridReady = 'true';
+
   const cards = document.querySelectorAll('.project-card');
   const modal = document.querySelector('.project-modal-overlay');
   const modalContent = document.getElementById('project-modal-content');
@@ -28,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       <p class="project-modal__summary">${project.details || project.summary}</p>
       <ul class="project-modal__list">
-        ${(project.milestones || []).map(item => `<li>${item}</li>`).join('')}
+        ${(project.milestones || []).map((item) => `<li>${item}</li>`).join('')}
       </ul>
     `;
   };
