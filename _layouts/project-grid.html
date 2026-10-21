@@ -16,7 +16,18 @@ layout: default
           </div>
           <h3>{{ project.title }}</h3>
           <p>{{ project.summary }}</p>
-          <button type="button" class="project-card__button">Vezi detalii</button>
+          
+          <!-- Salvăm datele în siguranță direct pe buton sub formă de atribute HTML escape-uite -->
+          <button type="button" 
+                  class="project-card__button"
+                  data-title="{{ project.title | escape }}"
+                  data-audience="{{ project.audience | escape }}"
+                  data-duration="{{ project.duration | escape }}"
+                  data-tech="{{ project.tech | escape }}"
+                  data-details="{{ project.details | escape }}"
+                  data-milestones='{{ project.milestones | jsonify | escape }}'>
+            Vezi detalii
+          </button>
         </div>
       </article>
     {% endfor %}
@@ -37,39 +48,53 @@ layout: default
   const modalContent = document.getElementById('project-modal-content');
   const closeButton = document.querySelector('.project-modal__close');
 
-  // REPARAT: Construim manual doar obiectele sigure, fără câmpurile grele de HTML care sparg scriptul
-  const projects = [
-    {% for project in project_list %}
-      {
-        "title": {{ project.title | jsonify }},
-        "audience": {{ project.audience | jsonify }},
-        "duration": {{ project.duration | jsonify }},
-        "tech": {{ project.tech | jsonify }},
-        "details": {{ project.details | jsonify }},
-        "milestones": {{ project.milestones | jsonify }}
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
-
   const renderProjectModal = (project) => {
+    // Ne asigurăm că milestones este un array valid înainte de a face map
+    const milestonesHTML = Array.isArray(project.milestones)
+      ? project.milestones.map(item => `<li>${item}</li>`).join('')
+      : '';
+
+    const audienceClass = (project.audience || '')
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[()]/g, '');
+
     modalContent.innerHTML = `
-      <h3 id="project-modal-title">${project.title}</h3>
+      <h3 id="project-modal-title">${project.title || ''}</h3>
       <div class="project-modal__meta">
-        <span class="project-card__tag project-card__tag--${project.audience.toLowerCase().replace(/\s+/g, '-').replace(/[()]/g, '')}">${project.audience}</span>
-        <span class="project-card__badge">${project.duration}</span>
-        <span class="project-card__badge">${project.tech}</span>
+        <span class="project-card__tag project-card__tag--${audienceClass}">${project.audience || ''}</span>
+        <span class="project-card__badge">${project.duration || ''}</span>
+        <span class="project-card__badge">${project.tech || ''}</span>
       </div>
-      <p>${project.details}</p>
+      <p>${project.details || ''}</p>
       <ul>
-        ${project.milestones.map(item => `<li>\${item}</li>`).join('')}
+        ${milestonesHTML}
       </ul>
     `;
   };
 
-  projectCards.forEach((card, index) => {
+  projectCards.forEach((card) => {
     const button = card.querySelector('.project-card__button');
+    if (!button) return;
+
     button.addEventListener('click', () => {
-      const project = projects[index];
+      // Citim din atributele HTML expuse, prevenind orice scurgere de cod brut Liquid
+      let milestones = [];
+      try {
+        milestones = JSON.parse(button.getAttribute('data-milestones')) || [];
+      } catch (e) {
+        milestones = [];
+      }
+
+      const project = {
+        title: button.getAttribute('data-title'),
+        audience: button.getAttribute('data-audience'),
+        duration: button.getAttribute('data-duration'),
+        tech: button.getAttribute('data-tech'),
+        details: button.getAttribute('data-details'),
+        milestones: milestones
+      };
+
       renderProjectModal(project);
       modal.classList.add('is-open');
       modal.setAttribute('aria-hidden', 'false');
