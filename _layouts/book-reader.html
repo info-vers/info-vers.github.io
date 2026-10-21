@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="book-reader">
+  {% assign pages = page.book_pages %}
+  {% if pages %}
+    <div class="book-reader__header">
+      <h2>{{ page.book_title | default: page.title }}</h2>
+      <div class="book-reader__progress">
+        <span id="book-progress-bar" class="book-reader__progress-bar"></span>
+      </div>
+    </div>
+
+    {% for page_item in pages %}
+      <article class="book-page {% if forloop.first %}is-active{% endif %}" data-page-index="{{ forloop.index0 }}">
+        <div class="book-page__image-wrap">
+          <img src="{{ page_item.image }}" alt="{{ page.title }} page {{ forloop.index }}" class="book-page__image" />
+        </div>
+        <div class="book-page__text">
+          <p>{{ page_item.text }}</p>
+        </div>
+      </article>
+    {% endfor %}
+
+    <div class="book-reader__controls">
+      <button class="book-reader__nav" data-direction="prev" type="button">⬅️ Înapoi</button>
+      <span class="book-reader__counter"><span id="book-current-page">1</span> / <span id="book-total-pages">{{ pages.size }}</span></span>
+      <button class="book-reader__nav" data-direction="next" type="button">Înainte ➡️</button>
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</div>
+
+<link rel="stylesheet" href="{{ '/assets/css/mentorship-hub.css' | relative_url }}">
+<script src="{{ '/assets/js/book-reader.js' | relative_url }}" defer></script>

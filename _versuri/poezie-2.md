@@ -1,7 +1,7 @@
 ---
 title: "Lumina din Ecran"
 date: 2026-10-20
-layout: single
+layout: poem-view
 ---
 Un pixel se naște, o stea se aprinde,
 În noaptea albastră speranța cuprinde.
