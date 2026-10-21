@@ -25,7 +25,8 @@ collections:
     output: true
     permalink: /versuri/:path/
   proiecte:
-    output: false
+    output: true
+    permalink: /proiecte/:path/
 
 # Defaults
 defaults:
@@ -37,12 +38,12 @@ defaults:
   - scope:
       path: "_carti"
     values:
-      layout: "book-reader"
+      layout: "single"
       author_profile: false
   - scope:
       path: "_versuri"
     values:
-      layout: "poem-view"
+      layout: "single"
       author_profile: false
   - scope:
       path: "_proiecte"

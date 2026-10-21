@@ -5,10 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeButton = document.querySelector('.project-modal__close');
   const projects = window.__PROJECTS__ || [];
 
-  if (!cards.length || !modal || !modalContent || !projects.length) return;
+  if (!cards.length || !modal || !modalContent || !projects.length) {
+    return;
+  }
 
   const renderProjectModal = (project) => {
     if (!project) return;
+
     const audienceClass = (project.audience || '')
       .toLowerCase()
       .replace(/\s+/g, '-')
@@ -33,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   cards.forEach((card, index) => {
     const button = card.querySelector('.project-card__button');
     if (!button) return;
+
     button.addEventListener('click', () => {
       renderProjectModal(projects[index]);
       modal.classList.add('is-open');

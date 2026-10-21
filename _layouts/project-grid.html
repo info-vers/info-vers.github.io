@@ -9,6 +9,7 @@ layout: default
   </div>
 
   {% assign project_list = site.proiecte | sort: 'order' %}
+
   {% if project_list.size > 0 %}
     <div class="project-grid">
       {% for project in project_list %}
