@@ -1,16 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const projectCards = document.querySelectorAll('.project-card');
+  const cards = document.querySelectorAll('.project-card');
   const modal = document.querySelector('.project-modal-overlay');
   const modalContent = document.getElementById('project-modal-content');
   const closeButton = document.querySelector('.project-modal__close');
-
   const projects = window.__PROJECTS__ || [];
 
-  if (!projectCards.length || !projects.length || !modal || !modalContent) return;
+  if (!cards.length || !modal || !modalContent || !projects.length) return;
 
   const renderProjectModal = (project) => {
     if (!project) return;
-
     const audienceClass = (project.audience || '')
       .toLowerCase()
       .replace(/\s+/g, '-')
@@ -32,10 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
   };
 
-  projectCards.forEach((card, index) => {
+  cards.forEach((card, index) => {
     const button = card.querySelector('.project-card__button');
     if (!button) return;
-
     button.addEventListener('click', () => {
       renderProjectModal(projects[index]);
       modal.classList.add('is-open');
@@ -43,10 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  closeButton.addEventListener('click', () => {
-    modal.classList.remove('is-open');
-    modal.setAttribute('aria-hidden', 'true');
-  });
+  if (closeButton) {
+    closeButton.addEventListener('click', () => {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+    });
+  }
 
   modal.addEventListener('click', (event) => {
     if (event.target === modal) {

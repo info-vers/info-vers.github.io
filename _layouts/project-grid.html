@@ -40,7 +40,7 @@ layout: default
 </div>
 
 <link rel="stylesheet" href="{{ '/assets/css/mentorship-hub.css' | relative_url }}">
-<script src="{{ '/assets/js/project-grid.js' | relative_url }}" defer></script>
 <script>
   window.__PROJECTS__ = {{ site.proiecte | sort: 'order' | jsonify }};
 </script>
+<script src="{{ '/assets/js/project-grid.js' | relative_url }}" defer></script>
