@@ -8,7 +8,7 @@ layout: default
   /* Aliniere consistentă cu restul paginilor Minimal Mistakes */
   .page__inner-wrap,
   .page__content {
-    max-width: 1400px !important;
+    max-width: 1500px !important;
     width: 100% !important;
     margin: 0 auto !important;
   }
@@ -20,10 +20,10 @@ layout: default
 
   #main .page .project-grid {
     display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-    gap: 28px !important;
+    grid-template-columns: repeat(3, minmax(290px, 1fr)) !important;
+    gap: 32px !important;
     width: 100% !important;
-    max-width: 1400px !important;
+    max-width: 1500px !important;
     margin: 30px auto 0 !important;
     align-items: stretch !important;
   }
@@ -48,7 +48,7 @@ layout: default
 
   #main .page .project-card__image {
     width: 100% !important;
-    height: 200px !important;
+    height: 220px !important;
     object-fit: cover !important;
     display: block !important;
     border-bottom: 1px solid #edf2f7 !important;
@@ -58,7 +58,7 @@ layout: default
     display: flex !important;
     flex-direction: column !important;
     flex-grow: 1 !important;
-    padding: 18px 18px 16px !important;
+    padding: 20px 20px 18px !important;
     color: #0f172a !important;
   }
 
@@ -67,7 +67,7 @@ layout: default
     flex-wrap: wrap !important;
     gap: 8px !important;
     align-items: center !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 12px !important;
   }
 
   #main .page .project-card__tag,
@@ -104,14 +104,15 @@ layout: default
     font-size: 0.95rem !important;
     line-height: 1.7 !important;
     color: #475569 !important;
+    min-height: 96px !important;
   }
 
   #main .page .project-card__button {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 100% !important;
-    margin-top: auto !important;
+    width: min(100%, 220px) !important;
+    margin: 0 auto !important;
     padding: 11px 14px !important;
     border: none !important;
     border-radius: 10px !important;
@@ -130,7 +131,7 @@ layout: default
 
   @media (max-width: 980px) {
     #main .page .project-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      grid-template-columns: repeat(2, minmax(260px, 1fr)) !important;
     }
   }
 
@@ -142,6 +143,10 @@ layout: default
     #main .page .project-card__body {
       padding: 16px !important;
     }
+
+    #main .page .project-card__button {
+      width: 100% !important;
+    }
   }
 
   /* Stiluri de bază de siguranță pentru ca Fereastra Modală să se deschidă garantat */
@@ -152,7 +157,7 @@ layout: default
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    display: none; /* Ascuns implicit */
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 99999;
