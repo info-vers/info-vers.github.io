@@ -1,17 +1,17 @@
 /* Custom colors: Black background & accents*/
-$background-color: #121212 !default;
-$text-color:       #e0e0e0 !default;
-$muted-text-color: #888888 !default;
-$primary-color:    #a84355 !default; // menu/titles
-$link-color:       #c95b6f !default; // links
-$border-color:     #2c2c2c !default;
+$background-color: #1a1f29 !default; // Gri-albăstrui foarte închis (Midnight)
+$text-color:       #f5f6f8 !default; // Alb curat
+$muted-text-color: #8a94a6 !default; // Gri-albastru șters 
+$primary-color:    #e25c73 !default; // Marsala electric/neon 
+$link-color:       #f08095 !default; // O nuanță și mai luminoasă de roz-marsala pentru linkuri
+$border-color:     #2d3545 !default; // Linii de demarcație discrete în ton cu fundalul
 
-/* overwrite Minimal Mistakes */
-$info-color:       #c95b6f !default; // info/accent
-$success-color:    #a84355 !default;
-$primary-color-hover: #e07b8d !default; // mouse hover
+/* Suprascrieri pentru elementele tematice */
+$info-color:       #4a90e2 !default; // albastru digital pentru elementele de structură
+$success-color:    #3cd070 !default;
+$primary-color-hover: #ffffff !default; // La hover, elementele devin albe, generând un contrast puternic
 
-/* Fonts */
+/* Fonturi Moderne */
 $sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
 $monospace:  "JetBrains Mono", "Fira Code", Monaco, Consolas, monospace !default;
 
