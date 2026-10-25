@@ -146,7 +146,7 @@ classes: wide
     align-items: end;
     gap: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(217, 154, 114, 0.18);
   }
 
   .cv-kicker {
@@ -154,7 +154,7 @@ classes: wide
     font-size: 0.72rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: #9fc3ff;
+    color: #d99a72;
     font-weight: 700;
   }
 
@@ -168,14 +168,14 @@ classes: wide
     margin: 0.8rem 0 0;
     max-width: 720px;
     font-size: 1.08rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(243, 239, 233, 0.8);
   }
 
   .cv-header__meta {
     display: flex;
     flex-direction: column;
     gap: 0.55rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(243, 239, 233, 0.8);
     font-weight: 600;
     text-align: right;
   }
@@ -185,7 +185,7 @@ classes: wide
     grid-template-columns: 220px minmax(0, 1fr);
     gap: 2rem;
     padding: 2rem 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(217, 154, 114, 0.18);
   }
 
   .cv-section__title h2 {
@@ -193,7 +193,7 @@ classes: wide
     font-size: 1.25rem;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #cfe3ff;
+    color: #f4d7b5;
   }
 
   .cv-section__content {
@@ -203,7 +203,7 @@ classes: wide
   .cv-section__content p {
     margin: 0;
     line-height: 1.8;
-    color: rgba(255,255,255,0.86);
+    color: rgba(243, 239, 233, 0.86);
   }
 
   .cv-timeline {
@@ -217,7 +217,7 @@ classes: wide
     grid-template-columns: 150px 1fr;
     gap: 1rem;
     padding: 1rem 0;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(217, 154, 114, 0.12);
   }
 
   .cv-job:first-child {
@@ -226,7 +226,7 @@ classes: wide
   }
 
   .cv-job__period {
-    color: #8cc7ff;
+    color: #d99a72;
     font-weight: 700;
     font-size: 0.9rem;
   }
@@ -239,7 +239,7 @@ classes: wide
   .cv-job__meta {
     margin: 0 0 0.7rem;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.7);
+    color: rgba(243, 239, 233, 0.7);
   }
 
   .cv-job__body ul,
@@ -247,7 +247,7 @@ classes: wide
     margin: 0;
     padding-left: 1.2rem;
     line-height: 1.8;
-    color: rgba(255,255,255,0.82);
+    color: rgba(243, 239, 233, 0.82);
   }
 
   .cv-education {
@@ -261,9 +261,9 @@ classes: wide
     flex-direction: column;
     gap: 0.2rem;
     padding: 0.9rem 1rem;
-    border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(217, 154, 114, 0.2);
     border-radius: 14px;
-    background: rgba(255,255,255,0.02);
+    background: rgba(255, 255, 255, 0.02);
   }
 
   .cv-skills {
@@ -277,9 +277,9 @@ classes: wide
     align-items: center;
     padding: 0.6rem 0.9rem;
     border-radius: 999px;
-    background: rgba(124, 200, 255, 0.08);
-    border: 1px solid rgba(124, 200, 255, 0.14);
-    color: #eaf6ff;
+    background: rgba(183, 107, 82, 0.12);
+    border: 1px solid rgba(217, 154, 114, 0.2);
+    color: #f4d7b5;
     font-weight: 600;
   }
 

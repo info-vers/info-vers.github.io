@@ -1,307 +1,314 @@
 ---
-layout: single
-title: "About Me"
-permalink: /
-author_profile: false
-classes: wide
+layout: default
 ---
 
-<div class="cv-shell">
-  <header class="cv-header">
-    <div class="cv-header__identity">
-      <p class="cv-kicker">Computer Science Mentor • Educator • Creative Technologist</p>
-      <h1>InfoVers</h1>
-      <p class="cv-role">Helping students build real coding projects, confidence, and a future-ready skillset.</p>
-    </div>
-
-    <div class="cv-header__meta">
-      <span>Romania</span>
-      <span>Remote / Online</span>
-      <span>Mentorship • Teaching • Project Design</span>
-    </div>
-  </header>
-
-  <section class="cv-section cv-section--intro">
-    <div class="cv-section__title">
-      <h2>Profile</h2>
-    </div>
-    <div class="cv-section__content">
-      <p>
-        I support students and families through structured, project-based learning in computer science.
-        My work combines mentoring, conceptual clarity, and practical application so learners can move from
-        curiosity to meaningful technical projects with confidence.
-      </p>
-    </div>
-  </section>
-
-  <section class="cv-section">
-    <div class="cv-section__title">
-      <h2>Experience</h2>
-    </div>
-
-    <div class="cv-section__content cv-timeline">
-      <article class="cv-job">
-        <div class="cv-job__period">2023 — Present</div>
-        <div class="cv-job__body">
-          <h3>Computer Science Mentor</h3>
-          <p class="cv-job__meta">Independent / Private Mentorship</p>
-          <ul>
-            <li>Guide students through coding fundamentals, algorithmic thinking, and project-based learning.</li>
-            <li>Design structured roadmaps for beginners, high school learners, and university-level preparation.</li>
-            <li>Create portfolios, mini-apps, and interactive challenges that turn concept learning into real outputs.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="cv-job">
-        <div class="cv-job__period">2021 — 2023</div>
-        <div class="cv-job__body">
-          <h3>Academic Support & Technical Coaching</h3>
-          <p class="cv-job__meta">Problem Solving • Logic • Exam Preparation</p>
-          <ul>
-            <li>Help students improve logical reasoning, debugging skills, and exam confidence.</li>
-            <li>Support preparation for programming and theoretical computer science topics.</li>
-            <li>Build personalized study plans focused on clarity, consistency, and measurable progress.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="cv-job">
-        <div class="cv-job__period">2019 — 2021</div>
-        <div class="cv-job__body">
-          <h3>Creative Coding & Educational Content</h3>
-          <p class="cv-job__meta">Workshops • Projects • Storytelling</p>
-          <ul>
-            <li>Built educational digital content for children, combining storytelling and coding concepts.</li>
-            <li>Created interactive book and learning experiences to make technical topics approachable.</li>
-            <li>Developed learning materials adapted for different age groups and learning styles.</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="cv-section">
-    <div class="cv-section__title">
-      <h2>Education</h2>
-    </div>
-    <div class="cv-section__content">
-      <div class="cv-education">
-        <div class="cv-education__item">
-          <strong>Computer Science / Technology Education</strong>
-          <span>Self-directed learning, mentoring practice, and applied project development</span>
-        </div>
-        <div class="cv-education__item">
-          <strong>Continuous Learning</strong>
-          <span>Algorithms, web development, creative coding, UX, and student-centered teaching</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cv-section">
-    <div class="cv-section__title">
-      <h2>Skills</h2>
-    </div>
-    <div class="cv-section__content">
-      <div class="cv-skills">
-        <span>Python</span>
-        <span>JavaScript</span>
-        <span>HTML / CSS</span>
-        <span>Algorithms</span>
-        <span>Problem Solving</span>
-        <span>Mentoring</span>
-        <span>Project Design</span>
-        <span>Curriculum Structure</span>
-        <span>UX for Learning</span>
-        <span>Creative Storytelling</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="cv-section">
-    <div class="cv-section__title">
-      <h2>Highlights</h2>
-    </div>
-    <div class="cv-section__content">
-      <ul class="cv-highlights">
-        <li>Project-based learning that keeps students motivated and accountable.</li>
-        <li>Clear progression from beginner logic to portfolio-ready build work.</li>
-        <li>Support for academic confidence, structured learning, and real-world problem solving.</li>
-      </ul>
-    </div>
-  </section>
-</div>
+<link rel="stylesheet" href="{{ '/assets/css/mentorship-hub.css' | relative_url }}">
 
 <style>
-  .cv-shell {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem 0 3rem;
+  /* Aliniere consistentă cu restul paginilor Minimal Mistakes */
+  .page__inner-wrap,
+  .page__content {
+    max-width: 1500px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
 
-  .cv-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(217, 154, 114, 0.18);
+  .page__content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
-  .cv-kicker {
-    margin: 0 0 0.8rem;
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #d99a72;
-    font-weight: 700;
+  #main .page .project-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(290px, 1fr)) !important;
+    gap: 32px !important;
+    width: 100% !important;
+    max-width: 1500px !important;
+    margin: 30px auto 0 !important;
+    align-items: stretch !important;
   }
 
-  .cv-header h1 {
-    margin: 0;
-    font-size: clamp(2.6rem, 5vw, 4.5rem);
-    line-height: 1;
+  #main .page .project-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    background: #1f1d1c !important;
+    border: 1px solid #3b2f2b !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    min-width: 0 !important;
   }
 
-  .cv-role {
-    margin: 0.8rem 0 0;
-    max-width: 720px;
-    font-size: 1.08rem;
-    color: rgba(243, 239, 233, 0.8);
+  #main .page .project-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.34) !important;
   }
 
-  .cv-header__meta {
-    display: flex;
-    flex-direction: column;
-    gap: 0.55rem;
-    color: rgba(243, 239, 233, 0.8);
-    font-weight: 600;
-    text-align: right;
+  #main .page .project-card__image {
+    width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-bottom: 1px solid rgba(217, 154, 114, 0.2) !important;
   }
 
-  .cv-section {
-    display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
-    gap: 2rem;
-    padding: 2rem 0;
-    border-bottom: 1px solid rgba(217, 154, 114, 0.18);
+  #main .page .project-card__body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    padding: 20px 20px 18px !important;
+    color: #f3efe9 !important;
+    background: #1f1d1c !important;
   }
 
-  .cv-section__title h2 {
-    margin: 0;
-    font-size: 1.25rem;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #f4d7b5;
+  #main .page .project-card__meta-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    align-items: center !important;
+    margin-bottom: 12px !important;
   }
 
-  .cv-section__content {
-    min-width: 0;
+  #main .page .project-card__tag,
+  #main .page .project-card__badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    border-radius: 999px !important;
+    padding: 4px 8px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.02em !important;
+    background: rgba(183, 107, 82, 0.12) !important;
+    color: #f4d7b5 !important;
+    border: 1px solid rgba(217, 154, 114, 0.25) !important;
   }
 
-  .cv-section__content p {
-    margin: 0;
-    line-height: 1.8;
-    color: rgba(243, 239, 233, 0.86);
+  #main .page .project-card__badge {
+    background: rgba(255, 255, 255, 0.03) !important;
+    color: #d9c6af !important;
+    border-color: rgba(217, 154, 114, 0.2) !important;
   }
 
-  .cv-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+  #main .page .project-card h3 {
+    margin: 0 0 10px !important;
+    font-size: 1.35rem !important;
+    line-height: 1.35 !important;
+    color: #f3efe9 !important;
   }
 
-  .cv-job {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 1rem;
-    padding: 1rem 0;
-    border-top: 1px solid rgba(217, 154, 114, 0.12);
+  #main .page .project-card__body p {
+    flex-grow: 1 !important;
+    margin: 0 0 18px !important;
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+    color: #d9c6af !important;
+    min-height: 96px !important;
   }
 
-  .cv-job:first-child {
-    border-top: none;
-    padding-top: 0;
+  #main .page .project-card__button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: min(100%, 220px) !important;
+    margin: 0 auto !important;
+    padding: 11px 14px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    background: linear-gradient(180deg, #b76b52 0%, #d99a72 100%) !important;
+    color: #fffaf4 !important;
+    font-size: 0.94rem !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: opacity 0.2s ease, transform 0.2s ease !important;
   }
 
-  .cv-job__period {
-    color: #d99a72;
-    font-weight: 700;
-    font-size: 0.9rem;
+  #main .page .project-card__button:hover {
+    opacity: 0.96 !important;
+    transform: translateY(-1px) !important;
   }
 
-  .cv-job__body h3 {
-    margin: 0 0 0.2rem;
-    font-size: 1.35rem;
+  @media (max-width: 980px) {
+    #main .page .project-grid {
+      grid-template-columns: repeat(2, minmax(260px, 1fr)) !important;
+    }
   }
 
-  .cv-job__meta {
-    margin: 0 0 0.7rem;
-    font-size: 0.9rem;
-    color: rgba(243, 239, 233, 0.7);
+  @media (max-width: 640px) {
+    #main .page .project-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    #main .page .project-card__body {
+      padding: 16px !important;
+    }
+
+    #main .page .project-card__button {
+      width: 100% !important;
+    }
   }
 
-  .cv-job__body ul,
-  .cv-highlights {
-    margin: 0;
-    padding-left: 1.2rem;
-    line-height: 1.8;
-    color: rgba(243, 239, 233, 0.82);
-  }
-
-  .cv-education {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .cv-education__item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 0.9rem 1rem;
-    border: 1px solid rgba(217, 154, 114, 0.2);
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.02);
-  }
-
-  .cv-skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-  }
-
-  .cv-skills span {
-    display: inline-flex;
+  .project-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
     align-items: center;
-    padding: 0.6rem 0.9rem;
-    border-radius: 999px;
-    background: rgba(183, 107, 82, 0.12);
-    border: 1px solid rgba(217, 154, 114, 0.2);
-    color: #f4d7b5;
-    font-weight: 600;
+    z-index: 99999;
+    padding: 20px;
   }
 
-  @media (max-width: 860px) {
-    .cv-header,
-    .cv-section {
-      grid-template-columns: 1fr;
-      display: block;
-    }
+  .project-modal-overlay.is-open {
+    display: flex !important;
+  }
 
-    .cv-header {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  .project-modal {
+    background: #1f1d1c;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.38);
+    color: #f3efe9;
+    border: 1px solid rgba(217, 154, 114, 0.2);
+  }
 
-    .cv-header__meta {
-      text-align: left;
-    }
-
-    .cv-job {
-      grid-template-columns: 1fr;
-    }
+  .project-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #f4d7b5;
   }
 </style>
+
+<div id="main" role="main">
+  <article class="page" itemscope itemtype="https://schema.org">
+    <div class="page__inner-wrap">
+      <header>
+        <h1 id="page-title" class="page__title" itemprop="headline">Proiecte</h1>
+      </header>
+
+      <div class="page__content" itemprop="text">
+        <div class="project-grid">
+          {% assign project_list = site.proiecte %}
+          {% if project_list %}
+            {% for project in project_list %}
+              <article class="project-card" data-project-index="{{ forloop.index0 }}">
+                <img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }}" class="project-card__image" />
+                <div class="project-card__body">
+                  <div class="project-card__meta-row">
+                    <span class="project-card__tag project-card__tag--{{ project.audience | downcase | replace: ' ', '-' | replace: '(', '' | replace: ')', '' }}">{{ project.audience }}</span>
+                    <span class="project-card__badge">{{ project.duration }}</span>
+                    <span class="project-card__badge">{{ project.tech }}</span>
+                  </div>
+                  <h3>{{ project.title }}</h3>
+                  <p>{{ project.summary }}</p>
+
+                  <button type="button"
+                          class="project-card__button"
+                          data-title="{{ project.title | escape }}"
+                          data-audience="{{ project.audience | escape }}"
+                          data-duration="{{ project.duration | escape }}"
+                          data-tech="{{ project.tech | escape }}"
+                          data-details="{{ project.details | escape }}"
+                          data-milestones='{{ project.milestones | jsonify | escape }}'>
+                    Vezi detalii
+                  </button>
+                </div>
+              </article>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="project-modal-overlay" aria-hidden="true">
+  <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+    <button class="project-modal__close" aria-label="Închide">×</button>
+    <div id="project-modal-content"></div>
+  </div>
+</div>
+
+<script>
+  const projectCards = document.querySelectorAll('.project-card');
+  const modal = document.querySelector('.project-modal-overlay');
+  const modalContent = document.getElementById('project-modal-content');
+  const closeButton = document.querySelector('.project-modal__close');
+
+  const renderProjectModal = (project) => {
+    const milestonesHTML = Array.isArray(project.milestones)
+      ? project.milestones.map(item => `<li>${item}</li>`).join('')
+      : '';
+
+    const audienceClass = (project.audience || '')
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[()]/g, '');
+
+    modalContent.innerHTML = `
+      <h3 id="project-modal-title" style="margin-top: 0;">${project.title || ''}</h3>
+      <div class="project-modal__meta" style="margin-bottom: 15px;">
+        <span class="project-card__tag project-card__tag--${audienceClass}">${project.audience || ''}</span> |
+        <span class="project-card__badge">${project.duration || ''}</span> |
+        <span class="project-card__badge">${project.tech || ''}</span>
+      </div>
+      <p><strong>Descriere:</strong> ${project.details || ''}</p>
+      <h4 style="margin-bottom: 5px;">Ce învățăm:</h4>
+      <ul>
+        ${milestonesHTML}
+      </ul>
+    `;
+  };
+
+  projectCards.forEach((card) => {
+    const button = card.querySelector('.project-card__button');
+    if (!button) return;
+
+    button.addEventListener('click', () => {
+      let milestones = [];
+      try {
+        milestones = JSON.parse(button.getAttribute('data-milestones')) || [];
+      } catch (e) {
+        milestones = [];
+      }
+
+      const project = {
+        title: button.getAttribute('data-title'),
+        audience: button.getAttribute('data-audience'),
+        duration: button.getAttribute('data-duration'),
+        tech: button.getAttribute('data-tech'),
+        details: button.getAttribute('data-details'),
+        milestones: milestones
+      };
+
+      renderProjectModal(project);
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  closeButton.addEventListener('click', () => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  });
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+  });
+</script>
