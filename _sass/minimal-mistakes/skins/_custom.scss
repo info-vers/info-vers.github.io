@@ -1,16 +1,16 @@
-/* Culori Custom: Fundal Black & Accente Terra / Marsala */
+/* Culori custom: temă întunecată, caldă și elegantă */
 $background-color: #121212 !default;
 $text-color:       #f3efe9 !default;
-$muted-text-color: #d4c2b1 !default;
-$primary-color:    #b76b52 !default; /* Terracotta / copper warm */
-$link-color:       #d99a72 !default; /* warm amber-copper */
+$muted-text-color: #d9c6af !default;
+$primary-color:    #b76b52 !default; /* terracotta warm */
+$link-color:       #d99a72 !default; /* amber-copper */
 $link-color-hover: #f4d7b5 !default; /* creamy gold */
-$border-color:     #40342f !default;
+$border-color:     #3b2f2b !default;
 
-$header-color:     $text-color !default;
-$footer-background-color: #1d1b1a !default;
-$code-background-color: #1c1a1a !default;
-$code-color: #f9d6bb !default;
+$header-color: $text-color !default;
+$footer-background-color: #1b1a1a !default;
+$code-background-color: #1d1b1a !default;
+$code-color: #f9d4b5 !default;
 
 $btn-primary-bg:     $primary-color !default;
 $btn-primary-color:  #fffaf4 !default;
@@ -19,9 +19,9 @@ $btn-secondary-bg:   #7d5346 !default;
 $btn-secondary-color: #fffaf4 !default;
 $btn-secondary-border: #7d5346 !default;
 
-$info-color:    #d4c2b1 !default;
-$success-color: #b76b52 !default;
-$warning-color: #d99a72 !default;
+$info-color:    $muted-text-color !default;
+$success-color: $primary-color !default;
+$warning-color: $link-color !default;
 $danger-color:  #8a413d !default;
 
 /* Fonturi Moderne */

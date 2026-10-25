@@ -58,9 +58,9 @@
   --mm-link-hover: #f4d7b5;
   --mm-button-bg: #b76b52;
   --mm-button-text: #fffaf4;
-  --mm-border: #40342f;
+  --mm-border: #3b2f2b;
   --mm-bg: #121212;
-  --mm-surface: #1c1a1a;
+  --mm-surface: #1d1b1a;
 }
 
 html,
@@ -172,7 +172,7 @@ input[type="button"],
 .feature,
 .project-shell {
   border-color: var(--mm-border) !important;
-  box-shadow: 0 0 0 1px rgba(219, 162, 124, 0.08) !important;
+  box-shadow: 0 0 0 1px rgba(217, 154, 114, 0.08) !important;
 }
 
 ::selection {
