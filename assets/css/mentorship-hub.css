@@ -50,3 +50,67 @@
 .project-card {
   min-height: 100%;
 }
+
+:root {
+  --mm-primary: #6A1B29;
+  --mm-secondary: #8B2F3C;
+  --mm-link: #C76A7A;
+  --mm-link-hover: #E8A7B2;
+  --mm-button-bg: #6A1B29;
+  --mm-button-text: #F7EDF0;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+.pagination a,
+.page__share a,
+.social-icons a,
+.author__urls a,
+.archive a,
+.taxonomies a,
+.greedy-nav a,
+.site-title a,
+.masthead a,
+.footer a,
+.btn,
+.btn--primary,
+.btn--secondary,
+button,
+input[type="submit"],
+input[type="button"] {
+  color: var(--mm-link) !important;
+}
+
+a:hover,
+a:focus,
+.pagination a:hover,
+.page__share a:hover,
+.social-icons a:hover,
+.author__urls a:hover,
+.archive a:hover,
+.taxonomies a:hover,
+.greedy-nav a:hover,
+.site-title a:hover,
+.masthead a:hover,
+.footer a:hover,
+.btn:hover,
+.btn--primary:hover,
+.btn--secondary:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  color: var(--mm-link-hover) !important;
+}
+
+.btn,
+.btn--primary,
+.btn--secondary,
+button,
+input[type="submit"],
+input[type="button"] {
+  background: var(--mm-button-bg) !important;
+  border-color: var(--mm-button-bg) !important;
+  color: var(--mm-button-text) !important;
+}
