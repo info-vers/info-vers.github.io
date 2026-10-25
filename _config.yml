@@ -7,7 +7,7 @@ baseurl: ""  # user page => empty baseurl
 
 # Minimal Mistakes theme
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "custom"
 
 # Required plugins for Minimal Mistakes
 plugins:
