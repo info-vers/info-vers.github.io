@@ -57,7 +57,5 @@ navigation:
     url: /
   - title: "Cărți Copii"
     url: /carti-copii/
-  - title: "Versuri"
-    url: /versuri/
   - title: "Proiecte"
     url: /proiecte/
